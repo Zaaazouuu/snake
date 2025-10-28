@@ -70,4 +70,15 @@ while not window_should_close() and perdu == False :
         
 
     end_drawing()
+
+while not is_key_pressed(KEY_UP):
+    clear_background(WHITE)
+    begin_drawing()
+    draw_text("GAME OVER ", 100,100,100,RED)  
+    draw_text(f"Score : {Score} ", 270,300,50,RED)  
+    draw_text("press up ", 350,500,25,RED)   
+
+    end_drawing() 
+
+
 close_window()
